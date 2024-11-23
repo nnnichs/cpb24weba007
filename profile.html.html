@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Profile</title>
+    <style>
+        /* Reset default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Welcome Page Styles */
+        .welcome-page {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .welcome-page h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .welcome-page p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+
+        .welcome-page a {
+            text-decoration: none;
+            color: white;
+            background-color: #004d99;
+            padding: 15px 25px;
+            font-size: 1.1em;
+            border-radius: 5px;
+        }
+
+        .welcome-page a:hover {
+            background-color: #003366;
+        }
+
+        /* Profile Page Styles */
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-left {
+            flex: 1;
+            padding-right: 30px;
+            text-align: center;
+        }
+
+        .profile-left img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .profile-left h2 {
+            color: #0066cc;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .profile-left p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        .contact-right {
+            flex: 1;
+            padding-left: 30px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: #0066cc;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            display: block;
+        }
+
+        .contact-links a:hover {
+            color: #004d99;
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #555;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        /* Responsive Design for smaller screens */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .contact-right {
+                padding-left: 0;
+                text-align: center;
+            }
+
+            .contact-links a {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Welcome Page -->
+    <div class="welcome-page">
+        <h1>Welcome to My Profile</h1>
+        <p>ยินดีต้อนรับสู่โปรไฟล์ของฉัน</p>
+        <a href="#profile">Enter Profile</a>
+    </div>
+
+    <!-- Profile Page -->
+    <div id="profile" class="container">
+        <!-- Profile Left Section -->
+        <div class="profile-left">
+            <img src="chanakan.jpg" alt="Chanakan Sangpom">
+            <h2>Hi there! I'm Chanakan Sangpom</h2>
+            <p><strong>ID:</strong> 67130500007</p>
+            <p>I am a collegian at King Mongkut's University of Technology Thonburi, studying in the Faculty of Information Technology, IT program #30.</p>
+        </div>
+
+        <!-- Contact Right Section -->
+        <div class="contact-right">
+            <h2>Contact Me</h2>
+            <div class="contact-links">
+                <a href="https://www.facebook.com/share/12DseZ3YBqE/?mibextid=LQQJ4d" target="_blank">Facebook</a>
+                <a href="https://www.instagram.com/nnniich/profilecard/?igsh=dmRkeDY1cmRrNmk1" target="_blank">Instagram</a>
+                <a href="tel:+66-84-261-8267">Tel: +66-84-261-8267</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chanakan Sangpom. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
